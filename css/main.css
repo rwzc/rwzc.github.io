@@ -19,6 +19,7 @@ nav ul, footer ul {
 nav ul {
   text-align: left;
   font-size: 24px !important;
+  color: inherit;
 }
 
 footer ul {
