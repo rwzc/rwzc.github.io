@@ -36,6 +36,28 @@ footer ul {
   width: 520px;
   max-width: 100%;
 }
+.skills {
+    position: relative;
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+    margin: 0 !important;
+    border: 0 !important;
+    padding: 0 !important;
+}
+
+.str {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+.pictures {
+    vertical-align: top;
+    margin: 0 !important;
+    border: 0 !important;
+    display: table-cell;
+}
 
 .image {
     padding-top: 10px;
