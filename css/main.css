@@ -24,7 +24,8 @@ footer ul {
   text-align: center;
 }
 
-.Richard {
+.centered {
+  vertical-align: middle;
   text-align: center;
   margin: 20px auto;
 }
