@@ -34,5 +34,7 @@ h2 {
   line-height: 1.75;
   color: #000000;
   text-align: center;
+  min-width: 70%;
+  max-width: 80%;
 }
   
