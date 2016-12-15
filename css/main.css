@@ -47,6 +47,7 @@ footer ul {
   margin: 0 !important;
   border: 0 !important;
   width: 33.33%;
+  float: left;
 }
 
 h1 {
