@@ -20,6 +20,10 @@ nav ul {
   text-align: left;
 }
 
+footer ul {
+  text-align: center;
+}
+
 h1 {
   color: #000000;
   font-size: 22px;
@@ -31,7 +35,7 @@ h1 {
   text-align: center;
 }
 
-h2 {
+h2, h3{
   color: #000000;
   font-size: 20px;
   font-family: "Quicksand" !important;
