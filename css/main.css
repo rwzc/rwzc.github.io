@@ -16,6 +16,12 @@ nav ul, footer ul {
   display: inline-block;
 }
 
+.centered {
+  vertical-align: middle;
+  text-align: center;
+  margin: 20px auto;
+}
+
 nav ul {
   text-align: left;
   font-size: 24px !important;
@@ -24,12 +30,6 @@ nav ul {
 
 footer ul {
   text-align: center;
-}
-
-.centered {
-  vertical-align: middle;
-  text-align: center;
-  margin: 20px auto;
 }
 
 .dp {
