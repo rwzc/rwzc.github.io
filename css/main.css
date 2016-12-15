@@ -44,8 +44,7 @@ footer ul {
 
 .pictures {
   vertical-align: top;
-  margin: 0 !important;
-  border: 0 !important;
+  margin: 5px;
   width: 33.33%;
   float: left;
 }
@@ -71,5 +70,9 @@ h2, h3, h4, h5, .desc {
   margin: 10px auto;
   margin-bottom: 20px;
   text-align: center;
+}
+
+.desc {
+  padding: 15px;
 }
   
