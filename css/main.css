@@ -24,6 +24,9 @@ footer ul {
   text-align: center;
 }
 
+.Richard {
+  
+
 h1 {
   color: #000000;
   font-size: 22px;
@@ -43,6 +46,7 @@ h2, h3, h4 {
   line-height: 1.75;
   width: 95%;
   margin: 10px auto;
+  margin-bottom: 20px;
   text-align: center;
 }
   
