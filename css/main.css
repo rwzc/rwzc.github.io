@@ -22,9 +22,9 @@ nav ul {
 
 h1 {
   color: #000000;
+  font-size: 22px;
   font-family: "Quicksand" !important;
   font-weight: 400 !important;
-  font-size: 22px;
   line-height: 1.15;
   letter-spacing: 0.15em;
   margin: 15px auto;
