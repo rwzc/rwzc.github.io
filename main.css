@@ -1,8 +1,8 @@
 h1 {
-  font-family: Georgia, Garamond, serif;
+  font-family: "Quicksand" !important;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   color: rgba(255, 255, 255, 0.5);
-  font-weight: 100;
+  font-weight: 400 !important;
   font-size: 22px;
   line-height: 24px;
   padding-bottom: 30px;
