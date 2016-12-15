@@ -4,6 +4,7 @@ nav ul, footer ul {
     font-weight: 700 !important;
     text-transform: uppercase;
     letter-spacing: 0.03em;
+    color: #000000;
     list-style: none;
     font-weight: bold;
     font-size: 1.1em !important;
@@ -12,13 +13,22 @@ nav ul, footer ul {
 }
 
 h1 {
-  color: inherit;
+  color: #000000;
   font-family: "Quicksand" !important;
   font-weight: 400 !important;
   font-size: 22px;
   line-height: 1.15;
   letter-spacing: 0.15em;
   margin: 15px auto;
+  text-align: center;
+}
+
+h2 {
+  font-size: x-large;
+  font-family: "Quicksand" !important;
+  font-weight: 500;
+  line-height: 1.75;
+  color: #000000;
   text-align: center;
 }
   
