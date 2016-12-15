@@ -16,7 +16,8 @@ nav ul, footer ul {
   text-transform: uppercase;
 }
 nav ul {
-  
+  text-align: left;
+}
 
 h1 {
   color: #000000;
@@ -35,8 +36,8 @@ h2 {
   font-weight: 500;
   line-height: 1.75;
   color: #000000;
-  text-align: center;
   min-width: 90%;
   max-width: 95%;
+  text-align: center;
 }
   
