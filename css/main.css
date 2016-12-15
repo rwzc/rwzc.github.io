@@ -37,8 +37,7 @@ h2 {
   font-weight: 500;
   line-height: 1.75;
   color: #000000;
-  min-width: 90%;
-  max-width: 95%;
+  width: 95%;
   text-align: center;
 }
   
