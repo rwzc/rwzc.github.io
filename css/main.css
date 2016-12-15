@@ -5,6 +5,7 @@ body {
 }
 
 nav ul, footer ul {
+  position: fixed;
   color: #000000;
   font-family: "Quicksand" !important;
   font-weight: 700 !important;
@@ -42,11 +43,13 @@ footer ul {
 }
 
 .pictures {
-    vertical-align: top;
-    margin: 0 !important;
-    border: 0 !important;
-    display: table-cell;
-    width: 33.33%;
+  position: fixed;
+  vertical-align: top;
+  margin: 0 !important;
+  border: 0 !important;
+  display: table-cell;
+  width: 33.33%;
+  
 }
 
 h1 {
