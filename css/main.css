@@ -33,7 +33,8 @@ footer ul {
 }
 
 .dp {
-  width: 520;
+  visibility: visible;
+  width: 520px;
   max-width: 100%;
 }
 
