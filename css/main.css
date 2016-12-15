@@ -10,7 +10,7 @@ nav ul, footer ul {
   font-weight: 700 !important;
   letter-spacing: 0.03em;
   list-style: none;
-  line-height: 1.4em !important;
+  line-height: 1 !important;
   transition: font-size 260ms ease;
   text-transform: uppercase;
   display: inline-block;
