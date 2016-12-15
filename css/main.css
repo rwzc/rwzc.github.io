@@ -1,8 +1,16 @@
+* { 
+  border: 1px solid rgba(0, 0, 0, 0.3);
 }
+
+body {
+  background-color: #FFF;
+  margin: 0;
+  padding: 0;
+}
+
 nav ul, footer ul {
     font-family: "Quicksand" !important;
     font-weight: 700 !important;
-    text-transform: uppercase;
     letter-spacing: 0.03em;
     color: #000000;
     list-style: none;
@@ -10,6 +18,7 @@ nav ul, footer ul {
     font-size: 1.1em !important;
     line-height: 1.4em !important;
     transition: font-size 260ms ease;
+    text-transform: uppercase;
 }
 
 h1 {
