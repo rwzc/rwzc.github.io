@@ -14,6 +14,7 @@ nav ul, footer ul {
   line-height: 1.4em !important;
   transition: font-size 260ms ease;
   text-transform: uppercase;
+  display: inline-block;
 }
 
 nav ul {
