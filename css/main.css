@@ -1,3 +1,16 @@
+}
+nav ul, footer ul {
+    font-family: "Quicksand" !important;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    list-style: none;
+    font-weight: bold;
+    font-size: 1.1em !important;
+    line-height: 1.4em !important;
+    transition: font-size 260ms ease;
+}
+
 h1 {
   color: inherit;
   font-family: "Quicksand" !important;
