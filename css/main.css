@@ -8,7 +8,6 @@ nav ul, footer ul {
   color: #000000;
   font-family: "Quicksand" !important;
   font-weight: 700 !important;
-  font-size: 30px !important;
   letter-spacing: 0.03em;
   list-style: none;
   line-height: 1.4em !important;
@@ -19,6 +18,7 @@ nav ul, footer ul {
 
 nav ul {
   text-align: left;
+  font-size: 30px !important;
 }
 
 footer ul {
