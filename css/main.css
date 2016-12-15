@@ -5,16 +5,18 @@ body {
 }
 
 nav ul, footer ul {
-    color: #000000;
-    font-family: "Quicksand" !important;
-    font-weight: 700 !important;
-    font-size: 1.1em !important;
-    letter-spacing: 0.03em;
-    list-style: none;
-    line-height: 1.4em !important;
-    transition: font-size 260ms ease;
-    text-transform: uppercase;
+  color: #000000;
+  font-family: "Quicksand" !important;
+  font-weight: 700 !important;
+  font-size: 1.1em !important;
+  letter-spacing: 0.03em;
+  list-style: none;
+  line-height: 1.4em !important;
+  transition: font-size 260ms ease;
+  text-transform: uppercase;
 }
+nav ul {
+  
 
 h1 {
   color: #000000;
@@ -34,7 +36,7 @@ h2 {
   line-height: 1.75;
   color: #000000;
   text-align: center;
-  min-width: 70%;
-  max-width: 80%;
+  min-width: 90%;
+  max-width: 95%;
 }
   
