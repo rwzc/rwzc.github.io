@@ -37,6 +37,14 @@ footer ul {
   max-width: 100%;
 }
 
+.image {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+}
+
 h1 {
   color: #000000;
   font-size: 30px;
