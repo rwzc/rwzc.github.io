@@ -42,6 +42,10 @@ footer ul {
   max-width: 100%;
 }
 
+.dp img {
+  max-width: 100%;
+}
+
 .pictures {
   vertical-align: top;
   margin: 5px;
