@@ -22,6 +22,7 @@ nav ul, footer ul {
   transition: font-size 260ms ease;
   text-transform: uppercase;
   display: block;
+  margin: 0;
 }
 
 nav ul {
