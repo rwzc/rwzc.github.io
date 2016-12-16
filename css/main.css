@@ -4,6 +4,13 @@ body {
   padding: 0;
 }
 
+a {
+}
+
+a:visited, :hover {
+  text-decoration: none;
+}
+
 nav ul, footer ul {
   color: #000000;
   font-family: "Quicksand" !important;
