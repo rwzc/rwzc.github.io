@@ -25,13 +25,13 @@ nav ul, footer ul {
 }
 
 nav ul {
-  position: fixed;
   text-align: left;
   font-size: 24px !important;
   color: inherit;
 }
 
 .nav-wrap {
+  position: fixed;
   width: 100%;
   border-bottom: solid 1px;
 }
