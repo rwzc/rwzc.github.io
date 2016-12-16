@@ -7,7 +7,7 @@ body {
 a {
 }
 
-a:visited, :hover {
+a:visited, a:hover {
   text-decoration: none;
 }
 
