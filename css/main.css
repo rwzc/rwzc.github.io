@@ -12,6 +12,7 @@ a {
 
 a:visited, a:hover {
   text-decoration: none;
+  color: #000000;
 }
 
 nav ul, footer ul {
