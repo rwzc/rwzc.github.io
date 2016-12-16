@@ -59,6 +59,10 @@ footer ul {
   margin-right: auto;
 }
 
+.dp {
+  margin-top: 100px;
+}
+
 .dp img {
   max-width: 60%;
   margin-left: auto;
