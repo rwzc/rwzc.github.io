@@ -31,6 +31,11 @@ nav ul {
   color: inherit;
 }
 
+.nav-wrap {
+  width: 100%;
+  border-bottom: solid 1px;
+}
+  
 footer ul {
   text-align: center;
 }
