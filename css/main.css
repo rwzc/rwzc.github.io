@@ -64,8 +64,12 @@ footer ul {
   margin-right: auto;
 }
 
-.dp, .intro, .skills, footer {
+.intro, .skills, footer {
   padding: 10px 40px;
+}
+
+.dp {
+  padding: 10px 40px 20px 40px;
 }
 
 .dp img {
