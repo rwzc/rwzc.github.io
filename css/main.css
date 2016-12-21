@@ -78,7 +78,10 @@ footer ul {
   margin-right: auto;
 }
 
-.pictures {
+.picwrap {
+
+}
+.picture {
   vertical-align: top;
   margin: 5px;
   width: 33.33%;
