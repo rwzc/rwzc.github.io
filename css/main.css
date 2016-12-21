@@ -78,6 +78,11 @@ footer ul {
   margin-right: auto;
 }
 
+.picwrap {
+    overflow: hidden;
+    width: 100%;
+}
+
 .picture {
   vertical-align: top;
   margin: 5px;
