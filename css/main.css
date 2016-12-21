@@ -64,7 +64,7 @@ footer ul {
   margin-right: auto;
 }
 
-.intro, .skills, footer {
+.intro, .skills, footer, .picwrap {
   padding: 10px 30px;
 }
 
@@ -78,9 +78,6 @@ footer ul {
   margin-right: auto;
 }
 
-.picwrap {
-
-}
 .picture {
   vertical-align: top;
   margin: 5px;
