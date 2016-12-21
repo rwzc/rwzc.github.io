@@ -85,6 +85,7 @@ footer ul {
 }
 
 .picture {
+  max-width: 60%;
   vertical-align: top;
   width: 33%;
   float: left;
