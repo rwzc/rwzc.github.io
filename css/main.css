@@ -64,7 +64,7 @@ footer ul {
   margin-right: auto;
 }
 
-.intro, .skills, footer, .picwrap {
+.intro, .skills, footer {
   padding: 10px 30px;
 }
 
@@ -81,6 +81,7 @@ footer ul {
 .picwrap {
     overflow: hidden;
     width: 100%;
+    padding: 10px 0px 10px 0px;
 }
 
 .picture {
