@@ -88,7 +88,7 @@ footer ul {
 
 .picture {
   vertical-align: top;
-  max-width: 33%;
+  width: 33%;
   margin-left: auto;
   margin-right: auto;
   float: left;
@@ -119,6 +119,9 @@ h2, h3, h4, h5, .desc {
 
 @media (max-width: 768px) {
   .dp img {
+  max-width: 100%;
+}
+  .picture img {
   max-width: 100%;
 }
 }
