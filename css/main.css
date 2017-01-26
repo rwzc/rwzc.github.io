@@ -124,11 +124,13 @@ h2, h3, h4, h5, .desc {
   .picture img {
   max-width: 100%;
 }
-  .clockdiv {
-  max-width: 100%;
+  
+.clockdiv {
+  max-width: 60%;
+  margin-left: auto;
+  margin-right: auto;
 }
-
-
+  
 #clockdiv{
     font-family: sans-serif;
     color: #fff;
@@ -139,20 +141,20 @@ h2, h3, h4, h5, .desc {
 }
 
 #clockdiv > div{
-    padding: 10px;
+    padding: 5px;
     border-radius: 3px;
     background: #00BF96;
     display: inline-block;
 }
 
 #clockdiv div > span{
-    padding: 15px;
+    padding: 10px;
     border-radius: 3px;
     background: #00816A;
     display: inline-block;
 }
 
 .smalltext{
-    padding-top: 5px;
-    font-size: 16px;
+    padding-top: 4px;
+    font-size: 10px;
 }
