@@ -125,12 +125,6 @@ h2, h3, h4, h5, .desc {
   max-width: 100%;
 }
   
-.clockdiv {
-  max-width: 60%;
-  margin-left: auto;
-  margin-right: auto;
-}
-  
 #clockdiv{
     font-family: sans-serif;
     color: #fff;
@@ -158,3 +152,10 @@ h2, h3, h4, h5, .desc {
     padding-top: 4px;
     font-size: 10px;
 }
+  
+.clockdiv {
+  max-width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+  
