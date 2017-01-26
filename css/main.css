@@ -131,7 +131,7 @@ h2, h3, h4, h5, .desc {
     display: inline-block;
     font-weight: 100;
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 #clockdiv > div{
@@ -153,9 +153,4 @@ h2, h3, h4, h5, .desc {
     font-size: 10px;
 }
   
-.clockdiv {
-  max-width: 60%;
-  margin-left: auto;
-  margin-right: auto;
-}
   
