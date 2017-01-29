@@ -1,7 +1,7 @@
 body {
   background-color: #FFF;
   margin: 0;
-  padding: 0;
+  padding-top: 25px;
 }
   
 a {
@@ -16,7 +16,7 @@ a:visited, a:hover {
 
 nav ul, footer ul {
   color: #000000;
-  font-family: "Quicksand" !important;
+  font-family: "Quicksand" !important, sans-serif;
   font-weight: 700 !important;
   letter-spacing: 0.03em;
   list-style: none;
@@ -38,10 +38,12 @@ nav, ul {
 }
 
 .nav-wrap {
+  box-shadow: 2px 1px 1px rgba(0,0,0,0.15);
   position: fixed;
   width: 100%;
   background-color: #FFF;
   padding: 10px 40px;
+  z-index: 1000;
 }
   
 footer ul {
@@ -97,7 +99,7 @@ footer ul {
 h1 {
   color: #000000;
   font-size: 30px;
-  font-family: "Quicksand" !important;
+  font-family: "Quicksand" !important, sans-serif;
   font-weight: 400 !important;
   line-height: 1.15;
   letter-spacing: 0.15em;
@@ -108,7 +110,7 @@ h1 {
 h2, h3, h4, h5, .desc {
   color: #000000;
   font-size: 20px;
-  font-family: "Quicksand" !important;
+  font-family: "Quicksand" !important, sans-serif;
   font-weight: 500;
   line-height: 1.75;
   width: 95%;
@@ -127,7 +129,7 @@ h2, h3, h4, h5, .desc {
 }
   
 #clockdiv{
-    font-family: sans-serif;
+    font-family: "Quicksand" !important, sans-serif;
     color: #fff;
     display: inline-block;
     font-weight: 100;
