@@ -77,7 +77,7 @@
     }
 
     .section-wrapper {
-      overflow: hidden;
+      overflow: auto;
       width: 100%;
     }
 
@@ -90,9 +90,10 @@
     .intro,
     .skills,
     footer {
-      padding: 10px 0px;
+      padding: auto;
       margin-left: auto;
       margin-right: auto;
+      overflow:auto;
     }
 
     .dp {
@@ -104,7 +105,7 @@
     }
 
     .picwrap {
-      overflow: hidden;
+      overflow: auto;
       max-width: 100%;
       margin: 10px auto;
     }
@@ -125,7 +126,7 @@
       font-weight: 500;
       line-height: 1.15;
       letter-spacing: 0.15em;
-      margin: 30px auto;
+      margin: 20px auto;
       text-align: center;
     }
 
@@ -137,7 +138,7 @@
       font-family: "Quicksand", sans-serif;
       font-weight: 400;
       line-height: 1.75;
-      width: 95%;
+      width: auto;
       margin: 10px auto;
       margin-bottom: 20px;
       text-align: center;
@@ -217,7 +218,7 @@
         <h1>Hello there,</h1>
         <h2>A 22 year old <br>currently serving the nation till May 2019</h2>
         <!--date countdown-->
-        <amp-date-countdown end-date="2019-05-03T08:00:00+08:00" offset-seconds="-10" layout="fixed-height" height="100">
+        <amp-date-countdown end-date="2019-05-03T08:00:00+08:00" offset-seconds="-10" layout="fixed-height" height="200">
             <template type="amp-mustache">
                 <p class="p1">
                   {{d}} days, {{h}} hours, {{m}} minutes and {{s}} seconds <br> before I ORD
@@ -302,3 +303,4 @@
 </body>
 
 </html>
+
