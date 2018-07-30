@@ -21,6 +21,7 @@
 
     a {
       text-decoration: none;
+      font-family: "Quicksand", sans-serif;
       color: #000000;
     }
 
@@ -30,7 +31,7 @@
       color: #000000;
     }
 
-    nav ul,
+    .nav ul,
     footer ul {
       color: #000000;
       font-family: "Quicksand", sans-serif;
@@ -40,10 +41,10 @@
       line-height: 1;
       text-transform: uppercase;
       display: block;
-      margin: 0;
+      margin: 5px;
     }
 
-    nav ul {
+    .nav {
       text-align: left;
       font-size: 24px;
       color: inherit;
@@ -54,21 +55,18 @@
       padding: 0;
     }
 
-    .nav-wrap {
+    .nav-container {
       box-shadow: 2px 1px 1px rgba(0, 0, 0, 0.15);
       transition: all .4s ease;
       top: 0;
       left: 0;
       position: fixed;
       width: 100%;
+      display: flex;
       background-color: #FFF;
       padding: 10px 40px;
       backface-visibility: hidden;
       z-index: 1000;
-    }
-
-    footer ul {
-      text-align: center;
     }
 
     .centered {
@@ -87,13 +85,13 @@
       margin-right: auto;
     }
 
+    .contact,
     .intro,
-    .skills,
-    footer {
+    .skills {
       padding: auto;
       margin-left: auto;
       margin-right: auto;
-      overflow:auto;
+      overflow: auto;
     }
 
     .dp {
@@ -146,45 +144,103 @@
 
     h3 {
       color: #000000;
-      font-size:17px;
+      font-size: 17px;
       font-family: "Quicksand", sans-serif;
       font-weight: 400;
       line-height: normal;
-      width:auto;
+      width: auto;
       margin: auto;
       text-align: left;
     }
 
     p {
       color: #000000;
-      font-size:15px;
+      font-size: 15px;
       font-family: "Quicksand", sans-serif;
       font-weight: 400;
       line-height: normal;
-      width:auto;
+      width: auto;
       margin: auto;
       text-align: left;
     }
 
     /* amp countdown */
+
     amp-date-countdown {
       display: block;
     }
 
     @media (max-width: 3840px) and (min-width: 666px) {
+      .dp,
       .picwrap,
       .picture {
         width: 33%;
       }
     }
   </style>
-  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+  <style amp-boilerplate>
+    body {
+      -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      animation: -amp-start 8s steps(1, end) 0s 1 normal both
+    }
+
+    @-webkit-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+      to {
+        visibility: visible
+      }
+    }
+
+    @-moz-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+      to {
+        visibility: visible
+      }
+    }
+
+    @-ms-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+      to {
+        visibility: visible
+      }
+    }
+
+    @-o-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+      to {
+        visibility: visible
+      }
+    }
+
+    @keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+      to {
+        visibility: visible
+      }
+    }
+  </style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
   <!--date countdown -->
+  <!--custom scripts -->
   <script async custom-element="amp-date-countdown" src="https://cdn.ampproject.org/v0/amp-date-countdown-0.1.js"></script>
   <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
+  <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+  <!--End custom scripts -->
 </head>
 
 <body>
+  <!-- start analytics-->
   <amp-analytics type="googleanalytics">
     <script type="application/json">
       {
@@ -200,44 +256,49 @@
       }
     </script>
   </amp-analytics>
-  <div class="nav-wrap">
-    <nav>
+  <!-- end analytics -->
+  <div class="nav-container">
+    <div class="nav">
       <ul class="homebutton">
         <li>
           <a href="/">Richard Wang</a>
         </li>
       </ul>
-    </nav>
+    </div>
   </div>
+
   <div class="section-wrapper">
     <div class="section centered">
       <div class="dp">
-        <amp-img src="../images/Richard4.jpg" alt="bad temporary photo pls help" width="400" height="350" layout="responsive"></amp-img>
+        <amp-img src="../Richard4.jpg" alt="bad temporary photo pls help" width="400" height="350" layout="responsive"></amp-img>
       </div>
       <div class="intro">
         <h1>Hello there,</h1>
         <h2>A 22 year old Kopi O Kosong addict<br>currently serving the nation till May 2019</h2>
         <!--date countdown-->
         <amp-date-countdown end-date="2019-05-03T08:00:00+08:00" offset-seconds="-10" layout="fixed-height" height="200">
-            <template type="amp-mustache">
+          <template type="amp-mustache">
                 <p class="p1">
                   {{d}} days, {{h}} hours, {{m}} minutes and {{s}} seconds <br> before I ORD
                 </p>
             </template>
         </amp-date-countdown>
-        <h2>About me..</h2>
+        <!-- End date countdown -->
+        <h2>About me</h2>
         <h3>Education</h3>
-        <p>
-          <b>University TBC</b>
-          <br><br><b>Ngee Ann Polytechnic</b>
+        <p><b>University TBC</b></p>
+        <br>
+        <p><b>Ngee Ann Polytechnic</b>
           <br>Business Studies
-          <br>2013-2017
-          <br><br><b><a href="http://www.geip.sg/index.html" target="_black" rel="noreferrer">Global Entrepreneurial Internship Programme</b>
+          <br>2013-2017</p>
+        <br>
+        <p><b><a href="http://www.geip.sg/index.html" target="_black" rel="noreferrer">Global Entrepreneurial Internship Programme</b>
           <br>GEIP Silicon Valley, Sunnyvale USA - 2nd batch
           <br>Oct 2016 - Mar 2017
           <br>NewzStand - Engage.Social
           <br>SaaS Sharing widget platform
-          </a>
+        </p>
+        </a>
       </div>
       <div class="skills">
         <h2>Here's what I'm up to </h2>
@@ -256,13 +317,13 @@
           </div>
         </div>
         <h2>Ongoing stuff that I'm contributing and learning more about</h2>
-          <p><br>1. Solving solutions that small businesses face when digitalizing their business.
+        <p><br>1. Solving solutions that small businesses face when digitalizing their business.
           <br>2. Reduce the amount of merchant fees incurred for small businesses through the use of third party payment processors.
           <br>3. Helping small businesses understand more of their business through the use of data analytics and business dashboards.
           <br>4. Web dev stuff.. HTML5 - CSS3 - JavaScript - Liquid - SEO - Python
           <br>5. Value investing
           <br>6. Minimalism
-          </p>
+        </p>
         <h2>Side projects/hustles/ideation</h2>
         <h3>Phase - premium performance tech apparel made locally</h3>
         <h3>AVANT</h3>
@@ -291,12 +352,11 @@
     <div class="section-wrapper">
       <div id="center" class="section centered">
         <h2>Let's get in touch
-        <br>I'm open to ideas, feedback, collaborations, partners and mentors.</h2>
-        <div class="Contact">
-          <ul>
-            <li class="Email">
-              <a href="mailto:RichardWang96@outlook.com" target="_blank" rel="noopener noreferrer">Email
-            </a>
+        <br>I'm open to ideas, feedback, collaborations, partners and mentors</h2>
+        <div class="contact">
+          <ul class="email">
+            <li>
+              <a href="mailto:RichardWang96@outlook.com" target="_blank" rel="noopener noreferrer">Email</a>
             </li>
           </ul>
         </div>
