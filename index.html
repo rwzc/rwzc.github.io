@@ -18,16 +18,19 @@
       background-color: #FFF;
       padding-top: 25px;
     }
+
     a {
       text-decoration: none;
       font-family: "Quicksand", sans-serif;
       color: #000000;
     }
+
     a:visited,
     a:hover {
       text-decoration: none;
       color: #000000;
     }
+
     .nav ul,
     footer ul {
       color: #000000;
@@ -40,15 +43,23 @@
       display: block;
       margin: 5px;
     }
-    .nav {
-      text-align: left;
+
+    .blog,
+    .homebutton {
       font-size: 24px;
       color: inherit;
+      display: table-cell;
+      float: none;
+      vertical-align: middle;
     }
-    nav,
-    ul {
+
+    .nav {
       padding: 0;
+      display: table;
+      table-layout: fixed;
+      width: 100%;
     }
+
     .nav-container {
       box-shadow: 2px 1px 1px rgba(0, 0, 0, 0.15);
       transition: all .4s ease;
@@ -56,25 +67,29 @@
       left: 0;
       position: fixed;
       width: 100%;
-      display: flex;
       background-color: #FFF;
-      padding: 10px 40px;
+      padding: 10px 15px;
       backface-visibility: hidden;
       z-index: 1000;
+      display: block;
     }
+
     .centered {
       vertical-align: middle;
       text-align: center;
     }
+
     .section-wrapper {
       overflow: auto;
       width: 100%;
     }
+
     .section {
       width: 90%;
       margin-left: auto;
       margin-right: auto;
     }
+
     .contact,
     .intro,
     .skills {
@@ -83,6 +98,7 @@
       margin-right: auto;
       overflow: auto;
     }
+
     .dp {
       border: 10px;
       padding: 30px 40px 10px 40px;
@@ -90,11 +106,13 @@
       margin-left: auto;
       margin-right: auto;
     }
+
     .picwrap {
       overflow: auto;
       max-width: 100%;
       margin: 10px auto;
     }
+
     .picture {
       vertical-align: top;
       width: 33%;
@@ -103,6 +121,7 @@
       float: left;
       max-width: 100%;
     }
+
     h1 {
       color: #000000;
       font-size: 30px;
@@ -113,6 +132,7 @@
       margin: 20px auto;
       text-align: center;
     }
+
     .p1,
     h2,
     .desc {
@@ -126,6 +146,7 @@
       margin-bottom: 20px;
       text-align: center;
     }
+
     h3 {
       color: #000000;
       font-size: 17px;
@@ -136,6 +157,7 @@
       margin: auto;
       text-align: left;
     }
+
     p {
       color: #000000;
       font-size: 15px;
@@ -146,10 +168,13 @@
       margin: auto;
       text-align: left;
     }
+
     /* amp countdown */
+
     amp-date-countdown {
       display: block;
     }
+
     @media (max-width: 3840px) and (min-width: 666px) {
       .dp,
       .picwrap,
@@ -165,6 +190,7 @@
       -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
       animation: -amp-start 8s steps(1, end) 0s 1 normal both
     }
+
     @-webkit-keyframes -amp-start {
       from {
         visibility: hidden
@@ -173,6 +199,7 @@
         visibility: visible
       }
     }
+
     @-moz-keyframes -amp-start {
       from {
         visibility: hidden
@@ -181,6 +208,7 @@
         visibility: visible
       }
     }
+
     @-ms-keyframes -amp-start {
       from {
         visibility: hidden
@@ -189,6 +217,7 @@
         visibility: visible
       }
     }
+
     @-o-keyframes -amp-start {
       from {
         visibility: hidden
@@ -197,6 +226,7 @@
         visibility: visible
       }
     }
+
     @keyframes -amp-start {
       from {
         visibility: hidden
@@ -232,20 +262,27 @@
     </script>
   </amp-analytics>
   <!-- end analytics -->
-  <div class="nav-container">
-    <div class="nav">
-      <ul class="homebutton">
-        <li>
-          <a href="/">Richard Wang</a>
-        </li>
-      </ul>
+  <header role="banner">
+    <div class="nav-container">
+      <div class="nav">
+        <ul class="homebutton">
+          <li>
+            <a href="/">Richard Wang</a>
+          </li>
+        </ul>
+        <ul class="blog">
+          <li>
+            <a href="/">blog</a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
+  </header>
 
   <div class="section-wrapper">
     <div class="section centered">
       <div class="dp">
-        <amp-img src="../images/Richard-SF-intern.jpg" alt="SanFranciscoInternship" width="400" height="350" layout="responsive"></amp-img>
+        <amp-img src="../images/Richard-SF-intern.jpg" alt="bad temporary photo pls help" width="400" height="350" layout="responsive"></amp-img>
       </div>
       <div class="intro">
         <h1>Hello there,</h1>
@@ -291,14 +328,11 @@
             </amp-img>
           </div>
         </div>
-        <h2>Ongoing stuff that I'm contributing and learning more about</h2>
-        <p><br>1. Solving solutions that small businesses face when digitalizing their business.
-          <br>2. Reduce the amount of merchant fees incurred for small businesses through the use of third party payment processors.
-          <br>3. Helping small businesses understand more of their business through the use of data analytics and business dashboards.
-          <br>4. Web dev stuff.. HTML5 - CSS3 - JavaScript - Liquid - SEO - Python
-          <br>5. Value investing
-          <br>6. Minimalism
-        </p>
+        <h2>Ongoing stuff that I'm learning more about</h2>
+          <p>1. Web dev stuff.. HTML5 - CSS3 - JavaScript - Liquid - SEO - Python
+          <br>2. Value investing
+          <br>3. Minimalism
+          </p>
         <h2>Side projects/hustles/ideation</h2>
         <h3>Phase - premium performance tech apparel made locally</h3>
         <h3>AVANT</h3>
@@ -331,7 +365,12 @@
         <div class="contact">
           <ul class="email">
             <li>
-              <a href="mailto:RichardWang96@outlook.com" target="_blank" rel="noopener noreferrer">Email</a>
+              <a href="mailto:RichardWang96@outlook.com" target="_blank" rel="noopener noreferrer" class="inline-block " alt="Link to AMP HTML E mail ">
+                <svg xmlns="http://www.w3.org/2000/svg " width="24 " height="18.4 " viewbox="0 0 56 43 ">
+                  <title>email</title>
+                  <path d="M10.5 6.4C9.1 6.4 8 7.5 8 8.9v21.3c0 1.3 1.1 2.5 2.5 2.5h34.9c1.4 0 2.5-1.2 2.5-2.5V8.9c0-1.4-1.1-2.5-2.5-2.5H10.5zm2.1 2.5h30.7L27.9 22.3 12.6 8.9zm-2.1 1.4l16.6 14.6c.5.4 1.2.4 1.7 0l16.6-14.6v19.9H10.5V10.3z " class="ampstart-icon ampstart-icon-email "></path>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
