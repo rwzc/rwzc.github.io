@@ -7,7 +7,7 @@
   <script async src="https://cdn.ampproject.org/v0.js"></script>
   <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-  <meta name="description" content="A young adult with an inherently curious personality.">
+  <meta name="description" content="A Generation Z problem solver with an inherently curious personality.">
   <meta name="keywords" content="Richard Wang, Singapore, Ngee Ann Polytechnic, Ravenoxidal, @Ravenoxidal">
   <meta name="author" content="Richard Wang">
   <title>Richard Wang</title>
@@ -16,7 +16,6 @@
   <style amp-custom>
     body {
       background-color: #FFF;
-      padding-top: 25px;
     }
 
     a {
@@ -45,7 +44,8 @@
     }
 
     nav,
-    ul {
+    ul,
+    .navli {
       padding: 0;
     }
 
@@ -54,11 +54,11 @@
       transition: all .4s ease;
       top: 0;
       left: 0;
-      position: fixed;
+      position: sticky;
       width: 100%;
-      display: flex;
+      display: block;
       background-color: #FFF;
-      padding: 10px 40px;
+      padding: 10px;
       backface-visibility: hidden;
       z-index: 1000;
     }
@@ -146,9 +146,23 @@
       margin: auto;
     }
 
+    h4 {
+      color: #000000;
+      font-size: 20px;
+      font-family: "Quicksand", sans-serif;
+      font-weight: 400;
+      text-decoration: underline;
+      line-height: 1.75;
+      width: auto;
+      margin: auto;
+    }
+
+    .education>li,
+    .notableevents>li,
+    .ongoingstuff>li,
     p {
       color: #000000;
-      font-size: 15px;
+      font-size: 18px;
       font-family: "Quicksand", sans-serif;
       font-weight: 400;
       line-height: normal;
@@ -156,6 +170,11 @@
       margin: auto;
     }
 
+    .education>li,
+    .notableevents>li,
+    .ongoingstuff>li {
+      padding-bottom: 20px;
+    }
     /* amp countdown */
 
     amp-date-countdown {
@@ -168,9 +187,12 @@
       .picture {
         width: 33%;
       }
+      .education>li,
+      .notableevents>li,
+      .ongoingstuff>li,
       h3,
       p {
-        font-size: 25px;
+        font-size: 20px;
       }
     }
   </style>
@@ -182,7 +204,6 @@
   <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
   <!--End custom scripts -->
 </head>
-
 <body>
   <!-- start analytics-->
   <amp-analytics type="googleanalytics">
@@ -204,7 +225,7 @@
   <div class="nav-container">
     <div class="nav">
       <ul class="homebutton">
-        <li>
+        <li class="navli">
           <a href="/">Richard Wang</a>
         </li>
       </ul>
@@ -229,28 +250,40 @@
             </template>
         </amp-date-countdown>
         <!-- End date countdown -->
-        <h2>About me</h2>
-        <h2>Education</h2>
-        <p><b>University TBC</b></p>
-        <br>
-        <p><b>Ngee Ann Polytechnic</b>
-          <br>Business Studies
-          <br>
-        <br>
-        <p><a href="http://www.geip.sg/index.html" rel="noreferrer"><b>Global Entrepreneurial Internship Programme</b>
-          <br>GEIP Silicon Valley, Sunnyvale USA - 2nd batch
-          <br>Oct 2016 - Mar 2017
-          <br>NewzStand - Engage.Social
-          <br>SaaS Sharing widget platform
-        </p>
-        </a>
+        <div class="about">
+          <h2>About me</h2>
+          <ul class="education">
+            <h4>Education</h4>
+            <li><b>University TBC</b></li>
+            <li><b>Ngee Ann Polytechnic</b><br>Business Studies</li>
+            <li><a href="http://www.geip.sg/index.html" rel="noreferrer"><b>Global Entrepreneurial Internship Programme</b>
+            <br>GEIP Silicon Valley, Sunnyvale USA - 2nd batch
+            <br>Oct 2016 - Mar 2017
+            <br>NewzStand - Engage.Social
+            <br>SaaS Sharing widget platform</li></a>
+          </ul>
+          <ul class="notableevents">
+            <h4>Notable Events in my life</h4>
+            <li>2009 - 13 y.o
+              <br>Started a weight-loss regime after being significantly overweight at around 80kg. Resulting weight 65kg.</li>
+            <li>2011 - 15 y.o
+              <br>Got inspired to do weight-lifting through youtube legends, Zyzz & Scooby1961</li>
+            <li>2014 - 18 y.o
+              <br>Conceptualized and started on Phase, a athleisure apparel focusing on technology and premium materials ; picked up Adobe photoshop, illustrator and eCommerce</li>
+            <li>2016 - 20 y.o
+              <br>Went on a Silicon Valley Internship at a startup Engage.Social for 6 months ; started value investing</li>
+            <li>2017 - 21 y.o
+              <br>Graduated from Ngee Ann Poly ; became product manager at Jeep Sing Fashion</li>
+            <li>2017 to 2019 - 21 y.o to 23 y.o
+              <br>National Service</li>
+          </ul>
+        </div>
       </div>
       <div class="skills">
         <h2>Here's what I'm up to </h2>
         <div class="picwrap">
           <div class="picture">
-            <amp-img src="/images/AdobeIllustrator.png" alt="Adobe Illustrator" width="256" height="85"
-             layout="responsive">
+            <amp-img src="/images/AdobeIllustrator.png" alt="Adobe Illustrator" width="256" height="85" layout="responsive">
             </amp-img>
           </div>
           <div class="picture">
@@ -262,19 +295,16 @@
             </amp-img>
           </div>
         </div>
-        <h2>Ongoing stuff that I'm learning more about</h2>
-        <p>1. Web dev stuff.. HTML5 - CSS3 - JavaScript - Liquid - SEO - Python
-          <br>2. Value investing
-          <br>3. Minimalism
-        </p>
-        <h2>Side projects/hustles/ideation</h2>
-        <p>Phase - premium performance tech apparel made locally
-        <br>AVANT
-        <br>YW
-        </p>
+        <ul class="ongoingstuff">
+          <h2>Ongoing stuff that I'm learning more about</h2>
+          <li>Web dev stuff.. HTML5 - CSS3 - JavaScript - Liquid - SEO - Python</li>
+          <li>Value investing</li>
+          <li>Minimalism</li>
+          <li>Phase - premium performance tech apparel made locally</li>
+        </ul>
       </div>
       <div class="startups">
-        <h2>Startups I have developed/contributed to</h2>
+        <h2>Startups I have contributed/developed</h2>
         <div class="picwrap">
           <div class="picture">
             <amp-img src="/images/ES.png" alt="Engage.Social" width="128" height="128" layout="responsive">
