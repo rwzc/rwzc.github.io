@@ -80,19 +80,22 @@
       margin-right: auto;
     }
 
+    .about,
     .contact,
     .intro,
     .skills,
     .startups {
-      padding: auto;
+      padding: 5px;
       margin: 30px auto 30px auto;
       overflow: auto;
     }
 
-    .intro,
+    .education,
+    .notableevents,
     .skills,
     .startups {
-      box-shadow: 4px 4px 6px 4px rgba(0, 0, 0, 0.15);
+      border-radius: 8px;
+      border: solid 1px rgba(0, 0, 0, 0.15);
     }
 
     .dp {
@@ -139,7 +142,7 @@
       line-height: 1.75;
       width: auto;
       margin: 10px auto;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
       text-align: center;
     }
 
@@ -173,8 +176,7 @@
       font-family: "Quicksand", sans-serif;
       font-weight: 400;
       line-height: normal;
-      width: auto;
-      margin: auto;
+      text-align: center;
     }
 
     .education>li,
@@ -189,7 +191,7 @@
       display: block;
     }
 
-    @media (max-width: 3840px) and (min-width: 666px) {
+    @media (max-width: 3840px) and (min-width: 800px) {
       .dp,
       .picwrap,
       .picture {
@@ -241,7 +243,7 @@
   </div>
 
   <div class="section-wrapper">
-    <div class="section centered">
+    <div class="centered">
       <div class="dp">
         <amp-img src="images\Richard-SF-intern.jpg" alt="SanFranciscoInternship" width="400" height="350" layout="responsive" noloading>
         </amp-img>
@@ -258,7 +260,8 @@
             </template>
         </amp-date-countdown>
         <!-- End date countdown -->
-        <div class="about">
+      </div>
+        <div class="about section">
           <h2>About me</h2>
           <h3>A problem solver with an inherently curious personality keen on finding out how stuff works.</h3>
           <ul class="education">
@@ -288,7 +291,7 @@
           </ul>
         </div>
       </div>
-      <div class="skills">
+      <div class="skills section">
         <h2>Here's what I'm up to </h2>
         <div class="picwrap">
           <div class="picture">
@@ -305,7 +308,7 @@
           </div>
         </div>
       </div>
-      <div class="startups">
+      <div class="startups section">
         <h2>Startups I have contributed/developed</h2>
         <div class="picwrap">
           <div class="picture">
@@ -323,7 +326,7 @@
         </div>
         <ul class="ongoingstuff">
           <h2>Ongoing stuff that I'm learning more about</h2>
-          <li>Web dev stuff.. HTML5 - CSS3 - JavaScript - Liquid - SEO - Python</li>
+          <li>Web dev stuff.. HTML5 - CSS3 - JavaScript - Liquid - SEO</li>
           <li>Value investing</li>
           <li>Minimalism</li>
           <li>Phase - premium performance tech apparel made locally</li>
