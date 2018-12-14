@@ -101,6 +101,7 @@
     }
 
     .education,
+    .yeewang,
     .notableevents,
     .skills,
     .startups {
@@ -144,8 +145,7 @@
     }
 
     .p1,
-    h2,
-    .desc {
+    h2 {
       color: #000000;
       font-size: 25px;
       font-family: "Quicksand", sans-serif;
@@ -165,18 +165,7 @@
       width: auto;
     }
 
-    h4 {
-      color: #000000;
-      font-size: 26px;
-      font-family: "Quicksand", sans-serif;
-      font-weight: 700;
-      text-decoration: bold;
-      line-height: 1.75;
-      width: auto;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
+    .yeewang>li,
     .education>li,
     .notableevents>li,
     .ongoingstuff>li,
@@ -200,7 +189,7 @@
     .yeewang {
       list-style: none;
       line-height: 2;
-      font-size: 20px;
+      font-size: 18px;
     }
 
     /* amp countdown */
@@ -218,7 +207,6 @@
       .education>li,
       .notableevents>li,
       .ongoingstuff>li,
-      h3,
       p {
         font-size: 20px;
       }
@@ -281,17 +269,18 @@
       </div>
         <div class="about section">
           <h2>About me</h2>
-          <h3><b>A problem solver with an inherently curious personality.</b></h3><br />
-          <p>Looking for someone to help scale your eCommerce business?
-              <ul class="yeewang">We're able to produce everything from small and fast prototypes to finished digital products.
+          <h3>A problem solver with an inherently curious personality.<br /><br /><br />
+          </h3>
+          <a>Let's scale your eCommerce business, from small and fast prototypes to finished digital products.</a>
+            <ul class="yeewang">
                 <li>Art Direction</li>
                 <li>Website Development</li>
                 <li>Product Photography</li>
                 <li>Video Creation</li>
-                <li><a href="https://yeewang.netlify.com" target="_blank" rel="noopener noreferrer"> Discover more at YW Digital Agency</a></li>
+                <li><a href="https://yeewang.netlify.com" target="_blank" rel="noopener noreferrer">YW Digital Agency</a></li>
               </ul>
           <ul class="education">
-            <h4>Education</h4>
+            <h2>Education</h2>
             <li><b>University</b><br />TBC</li>
             <li><b>Ngee Ann Polytechnic</b><br />Business Studies Graduate</li>
             <!-- is there a GEIP logo?? -->
@@ -308,7 +297,7 @@
             SaaS Sharing widget platform</li>
           </ul>
           <ul class="notableevents">
-            <h4>Notable Events in my life</h4>
+            <h2>Notable Events in my life</h2>
             <li>2009 - 13
               <br>Started a weight-loss regime after being significantly overweight at around 80kg. Resulting weight 65kg.</li>
             <li>2011 - 15
@@ -344,8 +333,12 @@
       </div>
       -->
       <div class="startups section">
-        <h4>Startups I have contributed/developed</h4>
+        <h2>Companies & startups I have contributed to</h2>
         <div class="picwrap">
+          <div class="picture">
+            <amp-img src="images\Jeep_Sing_Logo.png" alt="Jeep Sing Uniform" width="128" height="128" layout="responsive" noloading>
+            </amp-img>
+          </div>
           <div class="picture">
             <amp-img src="images\ES.png" alt="Engage.Social" width="128" height="128" layout="responsive" noloading>
             </amp-img>
@@ -360,7 +353,7 @@
           </div>
         </div>
         <ul class="ongoingstuff">
-          <h4>What I'm doing</h4>
+          <h2>What I'm doing</h2>
           <li>Web dev stuff</li>
           <li>Value investing</li>
           <li>Minimalism</li>
