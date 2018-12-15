@@ -93,7 +93,6 @@
 
     .about,
     .intro,
-    .skills,
     .startups {
       padding: 5px;
       margin: 50px auto 50px auto;
@@ -103,7 +102,6 @@
     .education,
     .yeewang,
     .notableevents,
-    .skills,
     .startups {
       border-radius: 8px;
       border: solid 1px rgba(0, 0, 0, 0.15);
@@ -186,10 +184,23 @@
       list-style: none;
     }
 
+    .resume {
+      line-height: 1.5;
+      list-style: none;
+    }
+
+    .resume>li {
+        margin-top: 20px;
+    }
+
     .yeewang {
       list-style: none;
       line-height: 2;
       font-size: 18px;
+    }
+
+    .yeewang>li {
+      margin-top: 20px;
     }
 
     /* amp countdown */
@@ -209,6 +220,7 @@
       .ongoingstuff>li,
       p {
         font-size: 20px;
+        margin-top: 20px;
       }
     }
   </style>
@@ -269,19 +281,22 @@
       </div>
         <div class="about section">
           <h2>About me</h2>
-          <h3>A problem solver with an inherently curious personality.<br /><br /><br />
-          </h3>
-          <a>Let's scale your eCommerce business, from small and fast prototypes to finished digital products.</a>
-            <ul class="yeewang">
-                <li>Art Direction</li>
-                <li>Website Development</li>
-                <li>Product Photography</li>
-                <li>Video Creation</li>
-                <li><a href="https://yeewang.netlify.com" target="_blank" rel="noopener noreferrer">YW Digital Agency</a></li>
-              </ul>
+          <h3>A problem solver with an inherently curious personality.</h3>
+          <ul class="resume">
+            <li>I'm seeking a 3-5 months contract / internship opportunity from May 2019 to Aug 2019.</li>
+            <li>Able to commit part-time after Aug while in University.</li>
+            <li>Hungry for success, driven to learn new skills!</li>
+          </ul>
+          <ul class="yeewang">
+            <li>Art Direction</li>
+            <li>Website Development</li>
+            <li>Product Photography</li>
+            <li>Video Creation</li>
+            <li><a href="https://yeewang.netlify.com" target="_blank" rel="noopener noreferrer"><b>YW Digital Agency</b></a></li>
+          </ul>
           <ul class="education">
             <h2>Education</h2>
-            <li><b>University</b><br />TBC</li>
+            <li><b>University</b><br />2019</li>
             <li><b>Ngee Ann Polytechnic</b><br />Business Studies Graduate</li>
             <!-- is there a GEIP logo?? -->
             <li><a href="http://www.geip.sg/" target="_blank" rel="noreferrer noopener"><b>Global Entrepreneurial Internship Programme</b></a><br />
@@ -296,21 +311,37 @@
             <!-- add NEW ES logo plus links to website -->
             SaaS Sharing widget platform</li>
           </ul>
-          <ul class="notableevents">
+          <div class="notableevents">
             <h2>Notable Events in my life</h2>
-            <li>2009 - 13
-              <br>Started a weight-loss regime after being significantly overweight at around 80kg. Resulting weight 65kg.</li>
-            <li>2011 - 15
-              <br>Got inspired to do weight-lifting through youtube legends, Zyzz & Scooby1961</li>
-            <li>2014 - 18
-              <br>Conceptualized and started Phase, a athleisure apparel focusing on technology and premium materials. <br> Picked up Adobe photoshop, illustrator and eCommerce</li>
-            <li>2016 - 20
-              <br>Went on a Silicon Valley Internship at Engage.Social for 6 months. <br>Started value investing</li>
-            <li>2017 - 21
-              <br>Graduated from Ngee Ann Poly. <br> became in charge of eCommerce operations at Jeep Sing Fashion</li>
-            <li>2017 to 2019 - 21 to 23
-              <br>National Service</li>
-          </ul>
+            <ul class="resume"><b>2014
+              <li>Conceptualized and started Phase, a athleisure apparel focusing on technology and premium materials. </li></b>
+              <li>Picked up Adobe photoshop, illustrator and eCommerce</li>
+            </ul>
+            <ul class="resume"><b>2016
+              <li>Went on a Silicon Valley Internship at Engage.Social for 6 months.</li></b>
+              <li><i>Job Scope</i></li>
+              <li>Business Development, Smart Share solution for publishers</li>
+              <li>Sales, outreaching, contacting and managing sales clients.</li>
+              <li>Data analytics, interpret data and trends with google analytics and creates beautiful reports with google data studio.</li>
+              <li>Customer Service Support, providing solutions for client's queries and follow up with support.</li>
+              <li>User testing, assisted with frontend developers with testing of website features, bugs and assisted with UI through creating graphics and vectors.</li>
+            </ul>
+            <ul class="resume"><b>2017
+              <li>Graduated from Ngee Ann Poly. </li><br />
+              <li>In-charge of eCommerce operations at Jeep Sing Fashion.</li></b>
+              <li><i>Job Scope</i></li>
+              <li>Web dev stuff with html, css, js and liquid.</li>
+              <li>Experimented with multiple mobile friendly UI/UX for the eCommerce website.</li>
+              <li>Delegating orders and delivery fulfillment.</li>
+              <li>Added chatbot customer support service to website</li>
+            </ul>
+            <ul class="resume"><b>2017 to 2019
+              <li>National Service</li></b>
+            </ul>
+            <ul class="resume"><b>2019 - Future
+              <li>University</li></b>
+            </ul>
+          </div>
         </div>
       </div>
       <!-- Removed section due to irrelevence
@@ -336,20 +367,28 @@
         <h2>Companies & startups I have contributed to</h2>
         <div class="picwrap">
           <div class="picture">
-            <amp-img src="images\Jeep_Sing_Logo.png" alt="Jeep Sing Uniform" width="128" height="128" layout="responsive" noloading>
-            </amp-img>
+            <a href="https://jeepsinguniform.com/" target="_blank" rel="noreferrer noopener">
+              <amp-img src="images\Jeep_Sing-192x192.png" alt="Jeep Sing Uniform" width="128" height="128" layout="responsive" noloading>
+              </amp-img>
+            </a>
           </div>
           <div class="picture">
-            <amp-img src="images\ES.png" alt="Engage.Social" width="128" height="128" layout="responsive" noloading>
-            </amp-img>
+            <a href="https://engage.social" target="_blank" rel="noreferrer noopener">
+              <amp-img src="images\ES.png" alt="Engage.Social" width="128" height="128" layout="responsive" noloading>
+              </amp-img>
+            </a>
           </div>
           <div class="picture">
-            <amp-img src="images\Carmen.png" alt="Carmen Singapore" width="128" height="128" layout="responsive" noloading>
-            </amp-img>
+            <a href="https://carmen.sg/" target="_blank" rel="noreferrer noopener">
+              <amp-img src="images\Carmen.png" alt="Carmen Singapore" width="128" height="128" layout="responsive" noloading>
+              </amp-img>
+            </a>
           </div>
           <div class="picture">
-            <amp-img src="images\Phase3.png" alt="Phase Singapore" width="128" height="128" layout="responsive" noloading>
-            </amp-img>
+            <a href="https://jeepsinguniform.com/collections/phase/" target="_blank" rel="noreferrer noopener">
+              <amp-img src="images\Phase3.png" alt="Phase Singapore" width="128" height="128" layout="responsive" noloading>
+              </amp-img>
+            </a>
           </div>
         </div>
         <ul class="ongoingstuff">
@@ -365,7 +404,7 @@
     <div class="section-wrapper">
       <div id="center" class="centered">
         <h2>Let's get in touch
-        <br>I'm open to ideas, feedback, collaborations, partners and mentors</h2>
+        <br />I'm open to ideas, feedback, collaborations, partners and mentors</h2>
         <div class="contact">
           <ul class="email">
             <li> <!-- insert some svg email logo to make it look cool and stuff -->
