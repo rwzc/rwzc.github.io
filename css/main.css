@@ -59,7 +59,7 @@ footer ul {
   text-align: center;
 }
 
-.section-wrapper {
+.sectionWrapper {
   overflow: hidden;
   width: 100%;
 }
@@ -86,7 +86,7 @@ footer ul {
   margin-right: auto;
 }
 
-.picwrap {
+.picWrap {
     overflow: hidden;
     width: 100%;
     margin: 10px auto;
