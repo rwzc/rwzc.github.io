@@ -1,0 +1,378 @@
+<!doctype html>
+<html ⚡ lang="en">
+
+<head>
+  <title>Richard Wang</title>
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <meta name="description" content="A problem solver with an inherently curious personality.">
+  <meta name="keywords" content="Richard Wang, Singapore, Ngee Ann Polytechnic, Richard, portfolio, web design, startups, website">
+  <meta name="author" content="Richard Wang's website">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Richard Wang's website" />
+  <meta property="og:url" content="https://rwzc.me" />
+  <meta property="og:image" content="https://ravenoxidal.github.io/images/Richard.jpg" />
+  <meta property="og:description" content="A problem solver with an inherently curious personality." />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://rwzc.me">
+  <link rel="icon" sizes="16x16 32x32" href="/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <style amp-custom>
+    body {
+      background-color: #FFF;
+    }
+
+    * {
+      font-family: "Quicksand", sans-serif;
+      color: #000000;
+    }
+
+    a {
+      text-decoration: none;
+      font-family: "Quicksand", sans-serif;
+      color: #000000;
+    }
+
+    p {
+      color: #000000;
+      font-size: 22px;
+      font-family: "Quicksand", sans-serif;
+      font-weight: 400;
+      line-height: normal;
+      text-align: center;
+    }
+
+    h1 {
+      color: #000000;
+      font-size: 40px;
+      font-family: "Quicksand", sans-serif;
+      font-weight: 500;
+      line-height: 1.15;
+      letter-spacing: 0.15em;
+      margin: 16px auto;
+      text-align: center;
+    }
+
+    .p1,
+    h2 {
+      color: #000000;
+      font-size: 30px;
+      font-family: "Quicksand", sans-serif;
+      font-weight: 400;
+      line-height: 1.75;
+      width: auto;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    h3 {
+      color: #000000;
+      font-size: 26px;
+      font-family: "Quicksand", sans-serif;
+      font-weight: 400;
+      line-height: normal;
+      width: auto;
+    }
+
+    li {
+      font-family: "Quicksand", sans-serif;
+      color: #000000;
+      font-size: 22px;
+      font-weight: normal;
+    }
+
+    ul {
+      font-family: "Quicksand", sans-serif;
+      color: #000000;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .nav ul,
+    footer ul {
+      color: #000000;
+      font-family: "Quicksand", sans-serif;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      list-style: none;
+      line-height: 1;
+      text-transform: uppercase;
+      display: block;
+      margin: 4px;
+    }
+
+    nav,
+    ul {
+      padding: 0;
+      font-size: 22px;
+    }
+
+    .border {
+      padding: 10px;
+      margin: 10px;
+      border-radius: 4px;
+      border: solid 1px rgba(0, 0, 0, 0.15);
+    }
+
+    .contact {
+      padding: 30px;
+    }
+
+    .nav {
+      text-align: center;
+      font-size: 24px;
+      color: inherit;
+    }
+
+    .navLi {
+      font-size: 30px;
+      padding-top: 4px;
+      padding-bottom: 4px;
+    }
+
+    .navContainer {
+      box-shadow: 2px 1px 1px rgba(0, 0, 0, 0.15);
+      transition: all .4s ease;
+      top: 0;
+      left: 0;
+      position: fixed;
+      width: 100%;
+      display: block;
+      background-color: #FFF;
+      padding: 5px;
+      backface-visibility: hidden;
+      z-index: 1000;
+    }
+
+    .centered {
+      vertical-align: middle;
+      text-align: center;
+    }
+
+    .sectionWrapper {
+      padding-top: 10px;
+      overflow: auto;
+      width: 100%;
+    }
+
+    .section {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+
+    .intro,
+    .section {
+      width: 90%;
+      padding: 5px;
+      margin: 20px auto 20px auto;
+      overflow: auto;
+      border-radius: 8px;
+      border: solid 1px rgba(0, 0, 0, 0.15);
+    }
+
+    .dp {
+      border: 10px;
+      padding: 15px 10px 10px 10px;
+      max-width: 25%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .picWrap {
+      overflow: auto;
+      max-width: 30%;
+      margin: 10px auto;
+    }
+
+    .picture {
+      vertical-align: top;
+      width: 33%;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 100%;
+    }
+
+    .education>li {
+      color: #000000;
+      font-family: "Quicksand", sans-serif;
+      font-weight: 400;
+      line-height: normal;
+      text-align: center;
+    }
+
+    li {
+      padding-top: 16px;
+      padding-bottom: 16px;
+      list-style: none;
+    }
+
+    /* Small devices iPhone x and below */
+    @media (max-width: 812px) {
+      .nav {
+        text-align: center;
+      }
+      .startUps,
+      .about,
+      .intro {
+        margin: 10px auto 10px auto;
+      }
+      .dp {
+        padding: 40px 10px 10px 10px;
+        max-width: 70%;
+      }
+      .picWrap {
+        max-width: 80%;
+      }
+    }
+
+    @media only screen and (max-width: 812px) {
+      h1 {
+        font-size: 26px;
+      }
+    }
+
+    @media only screen and (max-width: 812px) {
+      h2,
+      .p1 {
+        font-size: 22px;
+      }
+    }
+
+    @media only screen and (max-width: 812px) {
+      h3 {
+        font-size: 18px;
+      }
+    }
+
+      @media only screen and (max-width: 812px) {
+      ul,
+      li,
+      p {
+        font-size: 16px;
+        line-height: 2;
+        padding-top: 4px;
+        padding-bottom: 4px;
+      }
+    }
+
+    @media only screen and (max-width: 812px) {
+      .navLi {
+        line-height: 0.75;
+      }
+
+
+
+    @media only screen and (max-width: 812px) {
+      .navContainer {
+        padding: 0;
+      }
+    }
+
+    @media only screen and (max-width: 812px) {
+      ul {
+        margin-top: 8px;
+        margin-bottom: 8px;
+      }
+    }
+
+  </style>
+  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript>
+    <style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style>
+  </noscript>
+  <!--date countdown -->
+  <!--custom scripts -->
+  <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
+  <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+  <!--End custom scripts -->
+</head>
+
+<body>
+  <!-- start analytics-->
+  <amp-analytics type="googleanalytics">
+    <script type="application/json">
+      {
+        "vars": {
+          "account": "UA-87926508-1"
+        },
+        "triggers": {
+          "trackPageview": {
+            "on": "visible",
+            "request": "pageview"
+          }
+        }
+      }
+    </script>
+  </amp-analytics>
+  <!-- end analytics -->
+  <div class="navContainer">
+    <div class="nav">
+      <ul class="homeButton">
+        <li class="navLi">
+          <a href="/" aria-label="homeButton">Richard Wang</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="sectionWrapper">
+    <div class="centered">
+      <div class="dp">
+        <amp-img src="..\images\shxde.png" alt="shxde" width="256" height="256" layout="responsive" noloading>
+        </amp-img>
+      </div>
+      <div class="intro">
+        <h1>Shxde Personal Finance</h1>
+        <h2 style="color:red;">Side project concept - case study</h2>
+        <h3>Problem: I found that it was getting increasingly difficult to keep track of the changes and updates of financial products from financial institutions from banks
+        <br>
+        <br>Solution: Why not create a web application that can automatically update and inform me when a bank decides to update their product?
+        </h3>
+        <p>Disclaimer information viewed on the financial products may not be up to date on this website</p>
+      </div>
+        <div class="section">
+        <amp-img src="..\shxde\images\desktop1.png" alt="desktop1" width="2880" height="2393" layout="responsive" noloading>
+        </amp-img>
+        <p>My idea was to create a web application that showcases all the available financial products available by local banks</p>
+          <h3>Desktop view</h3>
+          <amp-img src="..\shxde\images\desktop2.png" alt="desktop2" width="2880" height="2281" layout="responsive" noloading>
+          </amp-img>
+          <amp-img src="..\shxde\images\desktop3.png" alt="desktop3" width="2880" height="1394" layout="responsive" noloading>
+          </amp-img>
+          <amp-img src="..\shxde\images\desktop4.png" alt="desktop4" width="2879" height="1478" layout="responsive" noloading>
+          </amp-img>
+        <h3>Mobile view</h3>
+          <div class="picture">
+            <div class="border">
+              <amp-img src="..\shxde\images\mobile7.png" alt="mobile7" width="1125" height="2436" layout="responsive" noloading>
+              </amp-img>
+            </div>
+            <div class="border">
+              <amp-img src="..\shxde\images\mobile6.png" alt="mobile6" width="1125" height="2436" layout="responsive" noloading>
+              </amp-img>
+            </div>
+            <div class="border">
+              <amp-img src="..\shxde\images\mobile8.png" alt="mobile8" width="1125" height="2436" layout="responsive" noloading>
+              </amp-img>
+            </div>
+          </div>
+      </div>
+      <footer>
+        <div class="sectionWrapper">
+          <h3>Let's get in touch
+            <br />I'm open to ideas, feedback, collaborations, partners and mentors</h3>
+          <div class="contact">
+            <ul class="email">
+              <li>
+                <a href="mailto:RichardWang96@outlook.com" target="_blank" rel="noopener noreferrer" aria-label="Email RichardWang96@outlook.com">✉</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </div>
+  </div>
+  </footer>
+</body>
+
+</html>

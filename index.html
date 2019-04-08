@@ -11,11 +11,11 @@
   <meta name="keywords" content="Richard Wang, Singapore, Ngee Ann Polytechnic, Richard, portfolio, web design, startups, website">
   <meta name="author" content="Richard Wang's website">
   <meta name="robots" content="index, follow">
-  <meta property="og:title" content="Richard Wang's website"/>
-  <meta property="og:url" content="https://rwzc.me"/>
-  <meta property="og:image" content="https://ravenoxidal.github.io/images/Richard.jpg"/>
-  <meta property="og:description" content="A problem solver with an inherently curious personality."/>
-  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="Richard Wang's website" />
+  <meta property="og:url" content="https://rwzc.me" />
+  <meta property="og:image" content="https://ravenoxidal.github.io/images/Richard.jpg" />
+  <meta property="og:description" content="A problem solver with an inherently curious personality." />
+  <meta property="og:type" content="website" />
   <link rel="canonical" href="https://rwzc.me">
   <link rel="icon" sizes="16x16 32x32" href="/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
@@ -109,6 +109,27 @@
       font-size: 22px;
     }
 
+    .bounce:hover {
+      animation: bounce 1s;
+    }
+
+    @keyframes bounce {
+	    0%, 20%, 60%, 100% {
+		  -webkit-transform: translateY(0);
+		  transform: translateY(0);
+	  }
+
+  	40% {
+  		-webkit-transform: translateY(-20px);
+  		transform: translateY(-20px);
+  	}
+
+  	80% {
+  		-webkit-transform: translateY(-10px);
+  		transform: translateY(-10px);
+  	}
+  }
+
     .contact {
       padding: 30px;
     }
@@ -186,15 +207,14 @@
 
     .picWrap {
       overflow: auto;
-      max-width: 30%;
+      max-width: 60%;
       margin: 10px auto;
     }
 
     .picture {
       vertical-align: top;
       width: 33%;
-      margin-left: auto;
-      margin-right: auto;
+      margin: 20px auto;
       float: left;
       max-width: 100%;
     }
@@ -304,8 +324,17 @@
       }
     }
 
+    @media only screen and (min-width: 1800px) {
+      .picWrap,
+      .picture {
+        max-width: 30%;
+      }
+}
+
   </style>
-  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript>
+    <style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style>
+  </noscript>
   <!--date countdown -->
   <!--custom scripts -->
   <script async custom-element="amp-date-countdown" src="https://cdn.ampproject.org/v0/amp-date-countdown-0.1.js"></script>
@@ -313,6 +342,7 @@
   <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
   <!--End custom scripts -->
 </head>
+
 <body>
   <!-- start analytics-->
   <amp-analytics type="googleanalytics">
@@ -343,140 +373,147 @@
   <div class="sectionWrapper">
     <div class="centered">
       <div class="dp">
-        <amp-img src="images\Richard.jpg" alt="RichardPicture" width="400" height="350" layout="responsive" noloading>
+        <amp-img src="images\Richard.jpg" alt="RichardPicture" width="1705" height="1404" layout="responsive" noloading>
         </amp-img>
       </div>
       <div class="intro">
-        <h1>Hello there,</h1>
+        <h1>Hello there 👋,</h1>
         <h2>22 year old <br>Kopi O Kosong & Americano lover <br>currently serving the nation till May 2019</h2>
         <!--date countdown-->
         <amp-date-countdown end-date="2019-05-03T08:00:00+08:00" width="0" height="0" offset-seconds="-10" layout="responsive">
           <template type="amp-mustache">
-                <p class="p1">
-                  {{d}} days, {{h}} hours,<br/> {{m}} minutes and {{s}} seconds <br/> till I ORD
-                </p>
-            </template>
+            <p class="p1">
+              {{d}} days, {{h}} hours,<br /> {{m}} minutes and {{s}} seconds <br /> till I ORD
+            </p>
+          </template>
         </amp-date-countdown>
         <!-- End date countdown -->
       </div>
-        <div class="about section">
-          <h2>About me</h2>
-          <h3>
-            A problem solver with an inherently curious personality.<br/><br/>
-            I'm seeking an internship opportunity related to finance from May 2019 onwards. <br/>
-          </h3>
-          <div class="whatImDoing section">
-            <h2>Here's what I've been up to</h2>
-            <div class="picWrap">
-              <div class="picture">
-                  <a href="https://avant.netlify.com" target="_blank" rel="noopener noreferrer" aria-label="avant website">
-                    <amp-img src="images\avant-512x512.png" alt="avant" width="128" height="128" layout="responsive" noloading>
-                    </amp-img>
-                  </a>
-              </div>
-              <div class="picture">
-                <a href="https://www.spacebay.co/" target="_blank" rel="noreferrer noopener" aria-label="spacebay website">
-                  <amp-img src="images\spacebay.png" alt="Spacebay" width="128" height="128" layout="responsive" noloading>
-                  </amp-img>
-                </a>
-              </div>
-              <div class="picture">
-                <a href="https://jeepsinguniform.com/collections/phase/" target="_blank" rel="noreferrer noopener" aria-label="phase website">
-                  <amp-img src="images\Phase3.png" alt="Phase Singapore" width="128" height="128" layout="responsive" noloading>
-                  </amp-img>
-                </a>
-              </div>
+      <div class="about section">
+        <h2>About me</h2>
+        <h3>
+          A problem solver with an inherently curious personality.<br /><br />
+          I'm seeking an internship opportunity related to finance from May 2019 onwards. <br />
+        </h3>
+        <div class="whatImDoing section">
+          <h2>Here's what I've been up to</h2>
+          <div class="picWrap">
+            <div class="picture bounce">
+              <a href="https://avant.netlify.com" target="_blank" rel="noopener noreferrer" aria-label="avant website">
+                <amp-img src="images\avant-512x512.png" alt="avant" width="512" height="512" layout="responsive" noloading>
+                </amp-img>
+              </a>
             </div>
-            <ul class="ongoingStuff">
-              <li>Web dev stuff</li>
-              <li>Value investing</li>
-            </ul>
+            <div class="picture bounce">
+              <a href="https://www.spacebay.co/" target="_blank" rel="noreferrer noopener" aria-label="spacebay website">
+                <amp-img src="images\spacebay.png" alt="Spacebay" width="366" height="300" layout="responsive" noloading>
+                </amp-img>
+              </a>
+            </div>
+            <div class="picture bounce">
+              <a href="Shxde\Shxde.html" target="_blank" rel="noopener noreferrer" aria-label="shxde personal finance">
+                <amp-img src="images\shxdeopengraph.png" alt="shxde" width="952" height="728" layout="responsive" noloading>
+                </amp-img>
+              </a>
+            </div>
+            <div class="picture bounce">
+              <a href="https://jeepsinguniform.com/collections/phase/" target="_blank" rel="noreferrer noopener" aria-label="phase website">
+                <amp-img src="images\Phase3.png" alt="Phase Singapore" width="1804" height="1804" layout="responsive" noloading>
+                </amp-img>
+              </a>
+            </div>
           </div>
-          <div class="education section">
-            <h2>Education</h2>
-            <ul>
-              <li>Ngee Ann Polytechnic<br/>Business Studies Graduate</li>
-              <!-- is there a GEIP logo?? -->
-              <li><a href="http://www.geip.sg/" target="_blank" rel="noreferrer noopener" aria-label="GEIP website">Global Entrepreneurial Internship Programme - 2nd batch</a><br />
+          <ul class="ongoingStuff">
+            <li>Web dev stuff</li>
+            <li>Value investing</li>
+          </ul>
+        </div>
+        <div class="education section">
+          <h2>Education</h2>
+          <ul>
+            <li>Ngee Ann Polytechnic<br />Business Studies Graduate</li>
+            <!-- is there a GEIP logo?? -->
+            <li><a href="http://www.geip.sg/" target="_blank" rel="noreferrer noopener" aria-label="GEIP website">Global Entrepreneurial Internship Programme - 2nd batch</a><br />
               Oct 2016 - Mar 2017<br />
               Silicon Valley, Sunnyvale, California, USA <br />
               NewzStand - Engage.Social<br />
-                  <a href="https://engage.social" target="_blank" rel="noreferrer noopener" aria-label="EngageSocial website">
-                      <amp-img src="images\ESlogo.png" alt="ESLogo"  width="168" height="44" noloading>
-                      </amp-img>
-                  </a> <br/>
+              <a href="https://engage.social" target="_blank" rel="noreferrer noopener" aria-label="EngageSocial website">
+                <amp-img src="images\ESlogo.png" alt="ESLogo" width="168" height="44" noloading>
+                </amp-img>
+              </a> <br />
               Marketing Intern<br />
               <!-- add NEW ES logo plus links to website -->
               SaaS Sharing widget platform</li>
-            </ul>
-          </div>
-          <div class="startUps section">
-            <h2>Companies & start ups<br/>I have worked with</h2>
-            <div class="picWrap">
-              <div class="picture">
-                <a href="https://jeepsinguniform.com/" target="_blank" rel="noreferrer noopener" aria-label="Jeep Sing Uniform website">
-                  <amp-img src="images\Jeep_Sing-192x192.png" alt="Jeep Sing Uniform" width="128" height="128" layout="responsive" noloading>
-                  </amp-img>
-                </a>
-              </div>
-              <div class="picture">
-                <a href="https://engage.social" target="_blank" rel="noreferrer noopener" aria-label="EngageSocial website">
-                  <amp-img src="images\ES.png" alt="Engage.Social" width="128" height="128" layout="responsive" noloading>
-                  </amp-img>
-                </a>
-              </div>
-              <div class="picture">
-                <a href="https://carmen.sg/" target="_blank" rel="noreferrer noopener" aria-label="Carmen website">
-                  <amp-img src="images\Carmen.png" alt="Carmen Singapore" width="128" height="128" layout="responsive" noloading>
-                  </amp-img>
-                </a>
-              </div>
+          </ul>
+        </div>
+        <div class="startUps section">
+          <h2>Companies & start ups<br />I have worked with</h2>
+          <div class="picWrap">
+            <div class="picture bounce">
+              <a href="https://jeepsinguniform.com/" target="_blank" rel="noreferrer noopener" aria-label="Jeep Sing Uniform website">
+                <amp-img src="images\Jeep_Sing-192x192.png" alt="Jeep Sing Uniform" width="192" height="192" layout="responsive" noloading>
+                </amp-img>
+              </a>
+            </div>
+            <div class="picture bounce">
+              <a href="https://engage.social" target="_blank" rel="noreferrer noopener" aria-label="EngageSocial website">
+                <amp-img src="images\ES.png" alt="Engage.Social" width="200" height="200" layout="responsive" noloading>
+                </amp-img>
+              </a>
+            </div>
+            <div class="picture bounce">
+              <a href="https://carmen.sg/" target="_blank" rel="noreferrer noopener" aria-label="Carmen website">
+                <amp-img src="images\Carmen.png" alt="Carmen Singapore" width="197" height="233" layout="responsive" noloading>
+                </amp-img>
+              </a>
             </div>
           </div>
-          <div class="notableEvents section">
-            <h2>Notable Events in my life</h2>
-            <ul class="resume">
-              <li><b>2019 - Future</b></li>
-              <li>University</li>
-            </ul>
-            <ul class="resume">
-              <li><b>2017 to 2019</b></li>
-              <li>National Service</li>
-            </ul>
-            <ul class="resume">
-              <li><b>2017</b></li>
-              <li>Graduated from Ngee Ann Poly. </li>
-              <li><b>eCommerce Product Lead at Jeep Sing Fashion - Singapore</b></li>
-              <li><i>Job Scope</i></li>
-              <li>Web development stuff with html, css, js and liquid.</li>
-              <li>Developed and optimized the eCommerce website, through mobile-friendly UI/UX, tested every little detail to improve customers experience and ease of purchase. Resulted in huge online sales growth YoY.</li>
-              <li>Enhanced Jeep Sing Fashion's web visibility on several top positions in highly competitive search queries on Google through SEO optimization. Achieving front page position of 1.2 from 8.2. Resulted in total impressions of 1.02 million over a 2 year period.</li>
-              <li>Implemented an omni sales channel strategy, which led to improved retail operations and inventory management.</li>
-            </ul>
-            <ul class="resume">
-              <li><b>2016</b></li>
-              <li><b>Marketing intern at Engage.Social - Silicon Valley</b></li>
-              <li><i>Job Scope</i></li>
-              <li>Participated in various sales pitches, outreach and managed sales clients.</li>
-              <li>Interpreted data and trends with the help of google analytics and created beautiful reports with Google data studio. </li>
-              <li>Provided in-depth customer support and solutions for clients through frequent voice calls and emails.</li>
-              <li>Customer Service Support, providing solutions for client's queries and follow up with support.</li>
-              <li>Aided with the user testing of website and app with developers, reported on bugs and assisted with UI elements through creating graphics and vector images.</li>
-            </ul>
-            <ul class="resume">
-              <li><b>2014</b></li>
-              <li><b>Conceptualized and started Phase</b> <br/> A athleisure apparel brand focusing on technology and premium materials. </li>
-              <li>Picked up Adobe photoshop, illustrator and eCommerce</li>
-            </ul>
-          </div>
+        </div>
+        <div class="notableEvents section">
+          <h2>Notable Events in my life</h2>
+          <ul class="resume">
+            <li><b>2019 - Future</b></li>
+            <li>University</li>
+          </ul>
+          <ul class="resume">
+            <li><b>2017 to 2019</b></li>
+            <li>National Service</li>
+          </ul>
+          <ul class="resume">
+            <li><b>2017</b></li>
+            <li>Graduated from Ngee Ann Poly. </li>
+            <li><b>eCommerce Product Lead at Jeep Sing Fashion - Singapore</b></li>
+            <li><i>Job Scope</i></li>
+            <li>Web development stuff with html, css, js and liquid.</li>
+            <li>Developed and optimized the eCommerce website, through mobile-friendly UI/UX, tested every little detail to improve customers experience and ease of purchase. Resulted in huge online sales growth YoY.</li>
+            <li>Enhanced Jeep Sing Fashion's web visibility on several top positions in highly competitive search queries on Google through SEO optimization. Achieving front page position of 1.2 from 8.2. Resulted in total impressions of 1.02
+              million over a 2 year period.</li>
+            <li>Implemented an omni sales channel strategy, which led to improved retail operations and inventory management.</li>
+          </ul>
+          <ul class="resume">
+            <li><b>2016</b></li>
+            <li><b>Marketing intern at Engage.Social - Silicon Valley</b></li>
+            <li><i>Job Scope</i></li>
+            <li>Participated in various sales pitches, outreach and managed sales clients.</li>
+            <li>Interpreted data and trends with the help of google analytics and created beautiful reports with Google data studio. </li>
+            <li>Provided in-depth customer support and solutions for clients through frequent voice calls and emails.</li>
+            <li>Customer Service Support, providing solutions for client's queries and follow up with support.</li>
+            <li>Aided with the user testing of website and app with developers, reported on bugs and assisted with UI elements through creating graphics and vector images.</li>
+          </ul>
+          <ul class="resume">
+            <li><b>2014</b></li>
+            <li><b>Conceptualized and started Phase</b> <br /> A athleisure apparel brand focusing on technology and premium materials. </li>
+            <li>Picked up Adobe photoshop, illustrator and eCommerce</li>
+          </ul>
         </div>
       </div>
     </div>
+  </div>
   <footer>
     <div class="sectionWrapper">
       <div id="center" class="centered">
         <h3>Let's get in touch
-        <br />I'm open to ideas, feedback, collaborations, partners and mentors</h3>
+          <br />I'm open to ideas, feedback, collaborations, partners and mentors</h3>
         <div class="contact">
           <ul class="email">
             <li>
