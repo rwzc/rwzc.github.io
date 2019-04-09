@@ -162,15 +162,27 @@
       overflow: auto;
     }
 
+    .intro, footer {
+     margin: 10px;
+     padding: 10px;
+    }
+
+    .intro {
+      border-bottom: solid 1px rgba(0, 0, 0, 0.15);
+    }
+
+    footer {
+      border-top: solid 1px rgba(0, 0, 0, 0.15);
+    }
+
     .education, .yeeWang, .notableEvents, .startUps, .whatImDoing {
       border-radius: 8px;
       border: solid 1px rgba(0, 0, 0, 0.15);
-      padding: 4px;
+      padding: 5px;
       margin-top: 20px;
     }
 
     .dp {
-      border: 10px;
       padding: 40px 10px;
       max-width: 20%;
       margin: 0 auto;
@@ -190,10 +202,6 @@
       max-width: 100%;
     }
 
-    .contact {
-      padding: 10px;
-    }
-
     /* amp countdown */
 
     amp-date-countdown {
@@ -201,12 +209,45 @@
     }
 
     /* Small devices iPhone x and below */
-    @media (max-width: 812px) {
+    @media only screen and (max-width: 760px) {
+      h1 {
+        font-size: 26px;
+      }
+      h2, .p1 {
+        font-size: 20px;
+      }
+      h3 {
+        font-size: 18px;
+      }
+    }
+
+      @media only screen and (max-width: 760px) {
+      .education>li, .notableEvents>li, .ongoingStuff>li, .whatImDoing>li, ul, li, p {
+        font-size: 16px;
+        line-height: 2;
+        padding: 4px 0;
+      }
+    }
+
+    @media only screen and (max-width: 760px) {
+      .navLi {
+        line-height: 0.75;
+      }
+      .navContainer {
+        padding: 0;
+      }
+      ul {
+        margin-top: 8px;
+        margin-bottom: 8px;
+      }
+    }
+
+    @media (max-width: 760px) {
       .startUps, .about, .intro {
         margin: 10px auto;
       }
       .dp {
-        padding: 34px 10px 10px 10px;
+        padding: 30px 10px 10px 10px;
         max-width: 70%;
       }
       .picWrap {
@@ -217,36 +258,14 @@
       }
     }
 
-    @media only screen and (max-width: 812px) {
-      h1 {
-        font-size: 26px;
-      }
-      h2, .p1 {
-        font-size: 22px;
-      }
-      h3 {
-        font-size: 18px;
+    @media only screen and (min-width: 768px) {
+      .dp {
+        max-width: 30%;
       }
     }
-
-      @media only screen and (max-width: 812px) {
-      .education>li, .notableEvents>li, .ongoingStuff>li, .whatImDoing>li, ul, li, p {
-        font-size: 16px;
-        line-height: 2;
-        padding: 4px 0;
-      }
-    }
-
-    @media only screen and (max-width: 812px) {
-      .navLi {
-        line-height: 0.75;
-      }
-      .navContainer {
-        padding: 0;
-      }
-      ul {
-        margin-top: 8px;
-        margin-bottom: 8px;
+    @media only screen and (min-width: 1025px) {
+      .dp {
+        max-width: 20%;
       }
     }
 
