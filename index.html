@@ -13,41 +13,38 @@
   <meta name="robots" content="index, follow">
   <meta property="og:title" content="Richard Wang's website" />
   <meta property="og:url" content="https://rwzc.me" />
-  <meta property="og:image" content="https://ravenoxidal.github.io/images/Richard.jpg" />
+  <meta property="og:image" content="https://rwzc.me/images/Richard.jpg" />
   <meta property="og:description" content="A problem solver with an inherently curious personality." />
   <meta property="og:type" content="website" />
   <link rel="canonical" href="https://rwzc.me">
   <link rel="icon" sizes="16x16 32x32" href="/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
   <style amp-custom>
-    body {
-      background-color: #FFF;
-    }
-
     * {
       font-family: "Quicksand", sans-serif;
       color: #000000;
     }
 
+    body {
+      background-color: #FFF;
+    }
+
     a {
       text-decoration: none;
-      font-family: "Quicksand", sans-serif;
-      color: #000000;
     }
 
     p {
-      color: #000000;
       font-size: 22px;
-      font-family: "Quicksand", sans-serif;
-      font-weight: 400;
-      line-height: normal;
       text-align: center;
+      line-height: normal;
+    }
+
+    p, .p1, h2, h3 {
+      font-weight: 400;
     }
 
     h1 {
-      color: #000000;
       font-size: 40px;
-      font-family: "Quicksand", sans-serif;
       font-weight: 500;
       line-height: 1.15;
       letter-spacing: 0.15em;
@@ -55,45 +52,39 @@
       text-align: center;
     }
 
-    .p1,
-    h2 {
-      color: #000000;
+    .p1, h2 {
       font-size: 30px;
-      font-family: "Quicksand", sans-serif;
-      font-weight: 400;
       line-height: 1.75;
-      width: auto;
       margin-bottom: 10px;
       text-align: center;
     }
 
     h3 {
-      color: #000000;
       font-size: 26px;
-      font-family: "Quicksand", sans-serif;
-      font-weight: 400;
       line-height: normal;
-      width: auto;
     }
 
     li {
-      font-family: "Quicksand", sans-serif;
-      color: #000000;
       font-size: 22px;
       font-weight: normal;
+      list-style: none;
+    }
+
+    .education>li, .notableEvents>li, .ongoingStuff>li, .whatImDoing>li {
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
+
+    .resume {
+      line-height: 1.5;
     }
 
     ul {
-      font-family: "Quicksand", sans-serif;
-      color: #000000;
       font-size: 22px;
       font-weight: bold;
     }
 
-    .nav ul,
-    footer ul {
-      color: #000000;
-      font-family: "Quicksand", sans-serif;
+    .nav ul, footer ul {
       font-weight: 700;
       letter-spacing: 0.03em;
       list-style: none;
@@ -103,41 +94,12 @@
       margin: 4px;
     }
 
-    nav,
-    ul {
+    nav, ul {
       padding: 0;
-      font-size: 22px;
-    }
-
-    .bounce:hover {
-      animation: bounce 1s;
-    }
-
-    @keyframes bounce {
-	    0%, 20%, 60%, 100% {
-		  -webkit-transform: translateY(0);
-		  transform: translateY(0);
-	  }
-
-  	40% {
-  		-webkit-transform: translateY(-20px);
-  		transform: translateY(-20px);
-  	}
-
-  	80% {
-  		-webkit-transform: translateY(-10px);
-  		transform: translateY(-10px);
-  	}
-  }
-
-    .contact {
-      padding: 30px;
     }
 
     .nav {
-      text-align: center;
       font-size: 24px;
-      color: inherit;
     }
 
     .navLi {
@@ -160,6 +122,26 @@
       z-index: 1000;
     }
 
+    .bounce:hover {
+      animation: bounce 1s;
+    }
+
+    @keyframes bounce {
+	    0%, 20%, 60%, 100% {
+		  -webkit-transform: translateY(0);
+		  transform: translateY(0);
+	  }
+
+  	40% {
+  		-webkit-transform: translateY(-20px);
+  		transform: translateY(-20px);
+  	}
+
+  	80% {
+  		-webkit-transform: translateY(-10px);
+  		transform: translateY(-10px);
+  	}
+  }
     .centered {
       vertical-align: middle;
       text-align: center;
@@ -174,7 +156,6 @@
     .section {
       width: 90%;
       margin: 0 auto;
-      text-align: center;
     }
 
     .about,
@@ -199,14 +180,13 @@
     .dp {
       border: 10px;
       padding: 45px 40px 10px 40px;
-      max-width: 25%;
-      margin-left: auto;
-      margin-right: auto;
+      max-width: 15%;
+      margin: 0 auto;
     }
 
     .picWrap {
       overflow: auto;
-      max-width: 80%;
+      max-width: 60%;
       margin: 10px auto;
     }
 
@@ -218,30 +198,8 @@
       max-width: 100%;
     }
 
-    .education>li,
-    .notableEvents>li,
-    .ongoingStuff>li,
-    .whatImDoing>li {
-      color: #000000;
-      font-family: "Quicksand", sans-serif;
-      font-weight: 400;
-      line-height: normal;
-      text-align: center;
-    }
-
-    .education>li,
-    .notableEvents>li,
-    .ongoingStuff>li,
-    .whatImDoing>li,
-    li {
-      padding-top: 16px;
-      padding-bottom: 16px;
-      list-style: none;
-    }
-
-    .resume {
-      line-height: 1.5;
-      list-style: none;
+    .contact {
+      padding: 10px;
     }
 
     /* amp countdown */
@@ -252,20 +210,18 @@
 
     /* Small devices iPhone x and below */
     @media (max-width: 812px) {
-      .nav {
-        text-align: center;
-      }
-      .startUps,
-      .about,
-      .intro {
-        margin: 10px auto 10px auto;
+      .startUps, .about, .intro {
+        margin: 10px auto;
       }
       .dp {
-        padding: 40px 10px 10px 10px;
+        padding: 34px 10px 10px 10px;
         max-width: 70%;
       }
       .picWrap {
-        max-width: 80%;
+        max-width: 100%;
+      }
+      .section {
+        width: 95%;
       }
     }
 
@@ -273,33 +229,19 @@
       h1 {
         font-size: 26px;
       }
-    }
-
-    @media only screen and (max-width: 812px) {
-      h2,
-      .p1 {
+      h2, .p1 {
         font-size: 22px;
       }
-    }
-
-    @media only screen and (max-width: 812px) {
       h3 {
         font-size: 18px;
       }
     }
 
       @media only screen and (max-width: 812px) {
-      .education>li,
-      .notableEvents>li,
-      .ongoingStuff>li,
-      .whatImDoing>li,
-      ul,
-      li,
-      p {
+      .education>li, .notableEvents>li, .ongoingStuff>li, .whatImDoing>li, ul, li, p {
         font-size: 16px;
         line-height: 2;
-        padding-top: 4px;
-        padding-bottom: 4px;
+        padding: 4px 0;
       }
     }
 
@@ -307,16 +249,9 @@
       .navLi {
         line-height: 0.75;
       }
-
-
-
-    @media only screen and (max-width: 812px) {
       .navContainer {
         padding: 0;
       }
-    }
-
-    @media only screen and (max-width: 812px) {
       ul {
         margin-top: 8px;
         margin-bottom: 8px;
@@ -326,7 +261,7 @@
     @media only screen and (min-width: 1800px) {
       .picWrap,
       .picture {
-        max-width: 30%;
+        max-width: 40%;
       }
 }
 
@@ -361,7 +296,7 @@
   </amp-analytics>
   <!-- end analytics -->
   <div class="navContainer">
-    <div class="nav">
+    <div class="nav centered">
       <ul class="homeButton">
         <li class="navLi">
           <a href="/" aria-label="homeButton">Richard Wang</a>
