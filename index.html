@@ -71,8 +71,7 @@
     }
 
     .education>li, .notableEvents>li, .ongoingStuff>li, .whatImDoing>li {
-      padding-top: 16px;
-      padding-bottom: 16px;
+      padding: 16px 0;
     }
 
     .resume {
@@ -104,8 +103,7 @@
 
     .navLi {
       font-size: 30px;
-      padding-top: 4px;
-      padding-bottom: 4px;
+      padding: 4px 0;
     }
 
     .navContainer {
@@ -158,19 +156,13 @@
       margin: 0 auto;
     }
 
-    .about,
-    .intro,
-    .startUps {
+    .about, .intro, .startUps {
       padding: 5px;
       margin: 30px auto 30px auto;
       overflow: auto;
     }
 
-    .education,
-    .yeeWang,
-    .notableEvents,
-    .startUps,
-    .whatImDoing {
+    .education, .yeeWang, .notableEvents, .startUps, .whatImDoing {
       border-radius: 8px;
       border: solid 1px rgba(0, 0, 0, 0.15);
       padding: 4px;
@@ -179,8 +171,8 @@
 
     .dp {
       border: 10px;
-      padding: 45px 40px 10px 40px;
-      max-width: 15%;
+      padding: 40px 10px;
+      max-width: 20%;
       margin: 0 auto;
     }
 
@@ -259,11 +251,10 @@
     }
 
     @media only screen and (min-width: 1800px) {
-      .picWrap,
-      .picture {
+      .picWrap, .picture {
         max-width: 40%;
       }
-}
+    }
 
   </style>
   <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript>
@@ -299,7 +290,7 @@
     <div class="nav centered">
       <ul class="homeButton">
         <li class="navLi">
-          <a href="/" aria-label="homeButton">Richard Wang</a>
+          <a href="/" target="_self" aria-label="homeButton">Richard Wang</a>
         </li>
       </ul>
     </div>
@@ -345,7 +336,7 @@
               </a>
             </div>
             <div class="picture bounce">
-              <a href="Shxde\Shxde.html" target="_blank" rel="noopener noreferrer" aria-label="shxde personal finance">
+              <a href="Shxde\Shxde.html" target="_self" rel="noopener noreferrer" aria-label="shxde personal finance">
                 <amp-img src="images\shxdeopengraph.png" alt="shxde" width="952" height="728" layout="responsive" noloading>
                 </amp-img>
               </a>
