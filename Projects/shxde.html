@@ -245,23 +245,20 @@
 </head>
 
 <body>
-  <!-- start analytics-->
-  <amp-analytics type="googleanalytics">
-    <script type="application/json">
-      {
-        "vars": {
-          "account": "UA-87926508-1"
-        },
-        "triggers": {
-          "trackPageview": {
-            "on": "visible",
-            "request": "pageview"
-          }
+<!-- start analytics-->
+<amp-analytics type="googleanalytics">
+  <script type="application/json">
+    {
+      "vars" : {
+        "gtag_id": "UA-87926508-1",
+        "config" : {
+          "UA-87926508-1": { "groups": "default" }
         }
       }
-    </script>
-  </amp-analytics>
-  <!-- end analytics -->
+    }
+  </script>
+</amp-analytics>
+<!-- end analytics -->
   <div class="navContainer">
     <div class="nav centered">
       <ul class="homeButton">
