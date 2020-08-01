@@ -4,7 +4,6 @@
 <head>
   <title>Richard Wang</title>
   <script async src="https://cdn.ampproject.org/v0.js"></script>
-  <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
   <meta name="description" content="A problem solver with an inherently curious personality.">
@@ -274,22 +273,20 @@
   <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
   <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
   <!--End custom scripts -->
+  
 </head>
 
 <body>
   <!-- start analytics-->
-  <amp-analytics type="googleanalytics">
-    <script type="application/json">
-      {
-        "vars" : {
-          "gtag_id": "UA-87926508-1",
-          "config" : {
-            "UA-87926508-1": { "groups": "default" }
-          }
-        }
-      }
-    </script>
-  </amp-analytics>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-87926508-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-87926508-1');
+  </script>
   <!-- end analytics -->
   <nav class="nav centered">
     <a href="/" target="_self" aria-label="homeButton">Richard Wang</a>
